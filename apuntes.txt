@@ -1,5 +1,6 @@
-- que es un fractal??
+- que es un fractal:
+	es un objeto geometrico que cuya estructura basica se repite en diferentes escalas.
 
-- que es la libreria minilibx?
+- que es la libreria minilibx:
 
 
