@@ -6,7 +6,7 @@
 #    By: rhiguita <rhiguita@student.42.madrid>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 20:49:44 by rhiguita          #+#    #+#              #
-#    Updated: 2024/04/22 23:50:30 by rhiguita         ###   ########.fr        #
+#    Updated: 2024/04/25 22:25:18 by rhiguita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,13 +20,13 @@ CFLAGS = -Wall -Werror -Wextra
 ARFLAGS = ar
 REMOVE = rm -f
 
-SRCS = fractol.c 
+SRCS = main.c \
 
 OBJS = (SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(LIBFT) $(MLX) $(OBJS)
+$(NAME): $(MLX) $(OBJS)
 	@$(CC) $(CFLAGS) $(OBJS) -L$(LIBFT) -L$(MLX) -lft $(MLX_F) -o $(NAME)
 	@echo "\033[0;36mCompilation of $(NAME) complete.\033[0m"
 
@@ -42,7 +42,7 @@ clean:
 	@$(REMOVE) $(OBJS)
 	@echo "\033[0;33mObject files removed.\033[0m"
 
-fclean: clean
+fclean: clean 
 	@make -C $(LIBFT) fclean
 	@$(REMOVE) $(NAME)	
 

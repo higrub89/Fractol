@@ -1,19 +1,21 @@
-* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fracto.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhiguita <rhiguita@student.42.madrid>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 23:02:02 by rhiguita          #+#    #+#             */
-/*   Updated: 2024/04/25 23:29:55 by rhiguita         ###   ########.fr       */
+/*   Created: 2024/04/24 23:27:36 by rhiguita          #+#    #+#             */
+/*   Updated: 2024/04/24 23:33:01 by rhiguita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#ifndef FRACTOL_H
+# define FRACTOL_H
+# include <stdio.h>
+# include <unistd.h>
 
-int main()
-{
-	void	*mlx;
-	mlx = mlx_init();	
-}
+# include "mlx/mlx.h"
+int	main(void);
+
+#endif
